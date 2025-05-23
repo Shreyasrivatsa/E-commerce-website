@@ -1,0 +1,70 @@
+.item-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover .item-image {
+  transform: scale(1.05);
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  margin: 10px 0;
+  min-height: 40px;
+}
+
+.item-prices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.item-price-new {
+  font-size: 18px;
+  color: #b12704;
+  font-weight: 700;
+}
+
+.item-price-old {
+  font-size: 14px;
+  color: #555;
+  text-decoration: line-through;
+}
+
+.view-details-btn {
+  padding: 10px 16px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #ddb347;
+}

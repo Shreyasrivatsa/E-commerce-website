@@ -1,0 +1,95 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #a2c2f3, #f7a1d7, #b28dff); /* Mix of blue, pink, and purple */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(153, 102, 255, 0.1);
+}
+
+/* Left: Logo and Brand */
+.navbar__left {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.navbar__brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3e1a8f; /* Darker purple shade */
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Center: Navigation Links */
+.navbar__center {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__link {
+  color: #3e1a8f; /* Darker purple shade */
+  font-size: 15px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+  background-color: #d4b0f0; /* Light purple with pinkish hue */
+  color: #2c1069; /* Darker shade of purple for better contrast */
+  font-weight: 500;
+}
+
+/* Right: Cart Icon */
+.navbar__right {
+  position: relative;
+}
+
+.navbar__cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .navbar__cart-icon {
+  width: 26px;
+  height: 26px;
+} */
+
+.navbar__cart-icon {
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(to right, #6896db, #f7a1d7, #875ce2);
+  padding: 6px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+
+.navbar__cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #ff6bb3; /* Pink shade */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+

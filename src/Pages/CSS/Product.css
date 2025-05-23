@@ -1,0 +1,139 @@
+.size-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .size-btn {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .size-btn.selected {
+    border-color: #007185;
+    background-color: #e7f3f3;
+    font-weight: bold;
+  }
+  
+  .size-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .add-to-cart-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #FFD814;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn.added {
+    background-color: #d4f7d4;
+    color: green;
+  }
+  .view-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #4419a8f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .prev-next-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-btn:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+.related-product-list {
+  display: flex;
+  flex-wrap: nowrap;   /* No wrapping - one horizontal line */
+  gap: 20px;
+  overflow-x: visible; /* Allow horizontal overflow for animation */
+  animation: scroll-left 7s linear infinite;
+}
+
+.related-product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px; /* Fixed height for consistent card size */
+  padding: 10px;
+  border: 2px solid #007185;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.related-product-card:hover {
+  transform: scale(1.05);
+}
+
+.related-product-card img {
+  width: 140px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Product name style */
+.product-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  min-height: 48px; /* Reserve space for ~2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Price style */
+.product-price {
+  color: #007185;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* View button style */
+.view-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: auto; /* Push button to the bottom */
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #333;
+}

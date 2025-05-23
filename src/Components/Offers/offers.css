@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main Offers Section */
+  .offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f7fb; /* Light grey background */
+    padding: 3rem 5%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem; /* Adds space from the navbar */
+    border-radius: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .offers-left {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .offers-left h1 {
+    font-size: 2.5rem;
+    color: #2A3D66; /* Dark blue color for header */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .offers-left p {
+    font-size: 1.2rem;
+    color: #777; /* Soft grey for the subheading */
+    margin-bottom: 2rem;
+  }
+  
+  .offers-left button {
+    padding: 0.8rem 2rem;
+    background-color: #FFD700; /* Golden yellow for the button */
+    color: #111;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .offers-left button:hover {
+    background-color: #FFB300; /* Darker yellow on hover */
+    transform: scale(1.05);
+  }
+  
+  .offers-right {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* Adds spacing for mobile views */
+  }
+  
+  .offers-right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .offers-right img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .offers {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+  
+    .offers-left,
+    .offers-right {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .offers-left h1 {
+      font-size: 2rem;
+    }
+  
+    .offers-left button {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .offers-right img {
+      max-width: 90%;
+    }
+  }
+  

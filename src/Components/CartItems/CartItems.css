@@ -1,0 +1,174 @@
+
+/* .cartitems {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cartitems-format {
+  margin-top: 20px;
+}
+
+.carticon-product-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cartitems-product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cartitems-size-dropdown {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.cartitems-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cartitems-quantity button {
+  padding: 4px 10px;
+  background: #f0f0f0;
+  border: 1px solid gray;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cartitems-remove-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.cartitems-quantity button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.cartitems-quantity button:hover {
+  background-color: #d3d3d3;
+}
+ */
+
+
+ .cartitems {
+  width: 100%;
+}
+
+.cartitems-row {
+  display: grid;
+  
+  grid-template-columns: 
+    80px         
+    minmax(160px, 1fr) 
+    80px          
+    100px         
+    60px;         
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+}
+
+
+
+
+.cartitems-row.header {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+
+
+.carticon-product-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.title-size-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* max-width: 160px;   
+  width: 100%; */
+}
+.product-name {
+  margin: 0;
+  font-size: 1rem;
+}
+.cartitems-size-dropdown {
+  max-width: 80px;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Price */
+.price-col p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Quantity */
+.quantity-col {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.quantity-col button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+.quantity-col span {
+  min-width: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Remove */
+.remove-col img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
