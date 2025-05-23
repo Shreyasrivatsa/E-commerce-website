@@ -1,31 +1,4 @@
 
-
-// import React from 'react';
-// import './Hero.css';
-// import hero_image from '../Assets/image.jpeg';
-
-// const Hero = () => {
-//   return (
-//     <div className='hero'>
-//       <div className="hero-left">
-//         <h3 className="hero-subtitle">New Arrivals</h3>
-//         <h1 className="hero-headline">Fresh Collection for Everyone</h1>
-//         <p className="hero-description">
-//           Discover the latest trends in fashion and shop with confidence.
-//         </p>
-//         <button className="hero-latest-btn">Shop Now</button>
-//       </div>
-
-//       <div className="hero-right">
-//         <img src={hero_image} alt="hero" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
-
 import React from 'react';
 import './Hero.css';
 import hero_image from '../Assets/image.jpeg'; // Ensure path is correct
